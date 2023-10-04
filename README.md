@@ -1,76 +1,30 @@
-# Nuxt 3 Minimal Starter
+# Wisesly - Your AI Travel Assistant
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to Wisesly, your AI-powered travel assistant! This project is developed by Alan Pacheco.
 
-## Setup
+## Project Overview
 
-Make sure to install the dependencies:
+Wisesly is a web application designed to help you plan your next trip with the assistance of artificial intelligence. You can chat with Wisesly to receive personalized travel recommendations based on your budget and travel preferences. Wisesly leverages Nuxt 3, the OpenAI API, the Booking.com API, and a custom Laravel API to provide you with the best travel suggestions.
 
-```bash
-# npm
-npm install
+## Live Demo
 
-# pnpm
-pnpm install
+You can access a live demo of the project for testing and evaluation purposes at [Wisesly on Netlify](https://wisesly.netlify.app/).
 
-# yarn
-yarn install
+## Technologies Used
 
-# bun
-bun install
-```
+Wisesly utilizes the following technologies and APIs:
 
-## Development Server
+- [Nuxt 3](https://nuxtjs.org) - A powerful Vue.js framework for building web applications.
+- [OpenAI](https://openai.com) - Leveraging AI for personalized travel recommendations through chat.
+- [Booking.com API](https://developers.booking.com/api/index.html) - Access to a vast database of travel accommodations.
+- [Laravel](https://laravel.com) - Building a custom API for enhanced functionality.
+- [Add any other technologies or libraries used in your project here]
 
-Start the development server on `http://localhost:3000`:
+## How to Use
 
-```bash
-# npm
-npm run dev
+To use Wisesly's chat-based travel planning:
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# wisesly
+1. Visit the [Wisesly Demo](https://wisesly.netlify.app/).
+2. Start a chat conversation with Wisesly.
+3. Provide your budget and specify your travel preferences within the chat.
+4. Engage in a conversation with Wisesly to receive personalized travel recommendations.
