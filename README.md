@@ -18,7 +18,6 @@ Wisesly utilizes the following technologies and APIs:
 - [OpenAI](https://openai.com) - Leveraging AI for personalized travel recommendations through chat.
 - [Booking.com API](https://developers.booking.com/api/index.html) - Access to a vast database of travel accommodations.
 - [Laravel](https://laravel.com) - Building a custom API for enhanced functionality.
-- [Add any other technologies or libraries used in your project here]
 
 ## How to Use
 
