@@ -48,9 +48,9 @@
             We improve your travel experience
           </h1>
           <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-            Your new adventure begins here, faster than ever. Just specify your
-            budget, your approximate travel date, and where you want to go, and
-            we'll suggest your best destination.
+            Your new adventure begins here, faster than ever. Simply specify
+            your budget and the type of destination you prefer, and we'll take
+            care of the rest
           </p>
           <div class="mt-10 justify-center flex gap-x-6 items-center">
             <a
