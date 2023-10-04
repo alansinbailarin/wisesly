@@ -27,6 +27,7 @@
                 ring: '',
                 divide: 'divide-y divide-gray-100 dark:divide-gray-800',
                 background: 'bg-white dark:bg-black',
+                rounded: 'rounded-none',
               }"
             >
               <template #header>
