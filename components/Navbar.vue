@@ -4,7 +4,9 @@
   >
     <nav class="md:flex md:items-center md:justify-between px-8 md:px-20 py-4">
       <div class="flex items-center justify-between">
-        <div>Logo</div>
+        <div>
+          <NuxtLink to="/">Wisesly </NuxtLink>
+        </div>
 
         <div class="md:hidden flex">
           <div class="mr-3">
@@ -50,10 +52,22 @@
         </div>
       </div>
       <div class="hidden md:block">asd</div>
-      <div class="hidden md:block">das</div>
+      <div class="hidden md:block">
+        <div v-if="auth.isLoggedIn">
+          <button @click="handleLogout">Logout</button>
+        </div>
+        {{ auth.isLoggedIn }}
+      </div>
     </nav>
   </header>
 </template>
 <script setup>
 const isOpen = ref(false);
+import { useAuthStore } from "@/stores/useAuthStore";
+
+const auth = useAuthStore();
+
+async function handleLogout() {
+  await auth.logout();
+}
 </script>

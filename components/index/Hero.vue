@@ -105,3 +105,4 @@
     </div>
   </UContainer>
 </template>
+<script setup></script>

@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
+    "@pinia/nuxt",
   ],
   ui: {
     icons: ["mdi", "simple-icons"],
