@@ -1,6 +1,10 @@
 <template>
   <header
-    class="sticky top-0 z-20 w-full bg-opacity-80 backdrop-filter backdrop-blur bg-gradient-to-t from-transparent via-transparent to-white dark:to-black"
+    class="sticky top-0 z-20 w-full bg-opacity-80 backdrop-filter"
+    :class="{
+      'backdrop-blur bg-gradient-to-t from-transparent via-transparent to-white dark:to-black':
+        isMobile,
+    }"
   >
     <nav class="md:flex md:items-center md:justify-between px-8 md:px-20 py-4">
       <div class="flex items-center justify-between">
@@ -53,10 +57,7 @@
       </div>
       <div class="hidden md:block">asd</div>
       <div class="hidden md:block">
-        <div v-if="auth.isLoggedIn">
-          <button @click="handleLogout">Logout</button>
-        </div>
-        {{ auth.isLoggedIn }}
+        <NavbarDropdownUser v-if="auth.user" :auth="auth" />
       </div>
     </nav>
   </header>
@@ -66,6 +67,7 @@ const isOpen = ref(false);
 import { useAuthStore } from "@/stores/useAuthStore";
 
 const auth = useAuthStore();
+const { isMobile } = useDevice();
 
 async function handleLogout() {
   await auth.logout();

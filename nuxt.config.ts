@@ -26,6 +26,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@pinia/nuxt",
+    "@nuxtjs/device",
   ],
   ui: {
     icons: ["mdi", "simple-icons"],
