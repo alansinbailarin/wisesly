@@ -13,9 +13,6 @@
         </div>
 
         <div class="md:hidden flex">
-          <div class="mr-3">
-            <NavbarColorModePicker />
-          </div>
           <UButton
             color="gray"
             variant="ghost"
@@ -56,8 +53,12 @@
         </div>
       </div>
       <div class="hidden md:block">asd</div>
-      <div class="hidden md:block">
+      <div class="hidden md:flex items-center gap-4">
+        <div class="">
+          <NavbarColorModePicker />
+        </div>
         <NavbarDropdownUser v-if="auth.user" :auth="auth" />
+        <NuxtLink v-else to="/user/login">Login</NuxtLink>
       </div>
     </nav>
   </header>
@@ -68,8 +69,4 @@ import { useAuthStore } from "@/stores/useAuthStore";
 
 const auth = useAuthStore();
 const { isMobile } = useDevice();
-
-async function handleLogout() {
-  await auth.logout();
-}
 </script>

@@ -14,7 +14,7 @@
       </div>
     </template>
     <template #item="{ item }">
-      <span class="truncate">{{ item.label }}</span>
+      <NuxtLink :to="item.route" class="truncate">{{ item.label }}</NuxtLink>
       <UIcon
         :name="item.icon"
         class="flex-shrink-0 h-4 w-4 text-gray-400 dark:text-gray-500 ms-auto"
@@ -29,6 +29,7 @@ const props = defineProps({
     required: true,
   },
 });
+
 const items = [
   [
     {
@@ -41,6 +42,7 @@ const items = [
     {
       label: "Dashboard",
       icon: "i-heroicons-presentation-chart-bar",
+      route: "/dashboard",
     },
   ],
   [
@@ -61,7 +63,12 @@ const items = [
     {
       label: "Sign out",
       icon: "i-heroicons-arrow-left-on-rectangle",
+      click: () => handleLogout(),
     },
   ],
 ];
+
+async function handleLogout() {
+  await props.auth.logout();
+}
 </script>
