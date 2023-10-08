@@ -20,7 +20,7 @@ async function handleLogin() {
   const { error } = await auth.login(form.value);
 
   if (!error.value) {
-    navigateTo("/dashboard");
+    navigateTo("/chats");
   }
 }
 </script>

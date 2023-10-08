@@ -40,16 +40,12 @@ const items = [
   ],
   [
     {
-      label: "Dashboard",
-      icon: "i-heroicons-presentation-chart-bar",
-      route: "/dashboard",
+      label: "My chats",
+      icon: "i-heroicons-chat-bubble-left-right",
+      route: "/chats",
     },
   ],
   [
-    {
-      label: "My chats",
-      icon: "i-heroicons-chat-bubble-left-right",
-    },
     {
       label: "Billing",
       icon: "i-heroicons-credit-card",

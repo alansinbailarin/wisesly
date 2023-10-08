@@ -13,7 +13,9 @@
         </p>
       </div>
     </div>
-    <div class="bg-gray-900 border border-gray-800 rounded-md px-3 py-2">
+    <div
+      class="dark:bg-gray-900 bg-gray-100 border-gray-200 border dark:border-gray-800 rounded-md px-3 py-2"
+    >
       <div v-for="item in items">
         <NuxtLink :to="item.to">
           <div class="flex items-center gap-3 py-1">
@@ -37,11 +39,6 @@ const props = defineProps({
 });
 
 const items = [
-  {
-    label: "Dashboard",
-    icon: "i-heroicons-presentation-chart-bar",
-    to: "/dashboard",
-  },
   {
     label: "My chats",
     icon: "i-heroicons-chat-bubble-left-right",

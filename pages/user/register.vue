@@ -31,7 +31,7 @@ async function handleRegister() {
   const { error } = await auth.register(form.value);
 
   if (!error.value) {
-    navigateTo("/dashboard");
+    navigateTo("/chats");
   }
 }
 </script>

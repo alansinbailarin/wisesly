@@ -2,9 +2,9 @@
   <div v-if="props.auth.user">
     <div class="w-full flex mb-3">
       <NuxtLink
-        to="/dashboard"
+        to="/chats"
         class="bg-gray-900 text-center w-full text-white dark:bg-white dark:text-gray-700 px-6 rounded-full py-2 hover:bg-gray-700 dark:hover:bg-gray-200 transition-all duration-300 ease-in-out shadow-sm"
-        >Dashboard</NuxtLink
+        >My Chats</NuxtLink
       >
     </div>
     <div class="w-full flex">

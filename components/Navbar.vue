@@ -6,7 +6,9 @@
         isMobile,
     }"
   >
-    <nav class="md:flex md:items-center md:justify-between px-8 md:px-20 py-4">
+    <nav
+      class="md:flex md:items-center md:justify-between px-6 md:px-[6.7rem] py-4"
+    >
       <div class="flex items-center justify-between">
         <div>
           <NuxtLink to="/">Wisesly </NuxtLink>
