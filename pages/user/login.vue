@@ -30,4 +30,8 @@ definePageMeta({
   middleware: ["guest"],
   layout: "custom",
 });
+
+useHead({
+  title: "Wisesly - Login",
+});
 </script>

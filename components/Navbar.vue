@@ -46,7 +46,10 @@
                   />
                 </div>
               </template>
-              <template #footer><h3>Hola</h3></template>
+              <NavbarSlideOverBody :auth="auth" />
+              <template #footer>
+                <NavbarSlideOverFooter :auth="auth" />
+              </template>
               <Placeholder class="h-full" />
             </UCard>
           </USlideover>
@@ -58,7 +61,18 @@
           <NavbarColorModePicker />
         </div>
         <NavbarDropdownUser v-if="auth.user" :auth="auth" />
-        <NuxtLink v-else to="/user/login">Login</NuxtLink>
+        <div v-else class="gap-2 flex items-center text-sm font-medium">
+          <NuxtLink
+            to="/user/login"
+            class="border border-gray-150 text-gray-600 dark:border-gray-600 dark:text-white px-6 rounded-full py-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 ease-in-out shadow-sm"
+            >Log In</NuxtLink
+          >
+          <NuxtLink
+            to="/user/register"
+            class="bg-gray-900 text-white dark:bg-white dark:text-gray-700 px-6 rounded-full py-2 hover:bg-gray-700 dark:hover:bg-gray-200 transition-all duration-300 ease-in-out shadow-sm"
+            >Sign up</NuxtLink
+          >
+        </div>
       </div>
     </nav>
   </header>

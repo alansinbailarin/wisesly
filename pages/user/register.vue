@@ -41,4 +41,8 @@ definePageMeta({
   middleware: ["guest"],
   layout: "custom",
 });
+
+useHead({
+  title: "Wisesly - Register",
+});
 </script>

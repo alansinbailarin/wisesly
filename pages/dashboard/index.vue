@@ -6,4 +6,8 @@
 definePageMeta({
   middleware: ["auth"],
 });
+
+useHead({
+  title: "Wisesly - Dashboard",
+});
 </script>
